@@ -30,7 +30,6 @@ public class Main {
         System.out.println("AC= " + AC);
 
         checkForRightTriangle(AB,AC,BC);
-
     }
     public static int readNumber() {
         Scanner scanner = new Scanner(System.in);
