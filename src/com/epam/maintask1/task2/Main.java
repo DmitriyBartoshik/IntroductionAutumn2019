@@ -9,32 +9,27 @@ public class Main {
         printResult(kg, tranferToGrams(kg), tranferToMilligrams(kg), tranferToTon(kg));
     }
 
-    public static int weightInput() {
+    private static int weightInput() {
         Scanner scanner = new Scanner(System.in);
-        int a = scanner.nextInt();
-        return a;
+        return scanner.nextInt();
     }
 
-    public static long tranferToMilligrams(int kg) {
-        long milligrams = kg * 1_000_000;
-        return milligrams;
+    private static long tranferToMilligrams(int kg) {
+        return kg * 1_000_000;
     }
 
-    public static long tranferToGrams(int kg) {
-        long grams = kg * 1000;
-        return grams;
+    private static long tranferToGrams(int kg) {
+        return  kg * 1000;
     }
 
-    public static double tranferToTon(int kg) {
-        double ton = kg / 1000.0;
-        return ton;
+    private static double tranferToTon(int kg) {
+        return kg / 1000.0;
     }
 
-    public static void printResult(int kg, long grams, long milligrams, double ton) {
+    private static void printResult(int kg, long grams, long milligrams, double ton) {
         System.out.println("масса динозавра в килограммах = " + kg);
         System.out.println("масса динозавра в граммах = " + grams);
         System.out.println("масса динозавра в миллиграммах = " + milligrams);
         System.out.println("масса динозавра в тоннах = " + ton);
     }
-
 }
